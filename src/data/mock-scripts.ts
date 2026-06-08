@@ -1,0 +1,7 @@
+import { SavedScript } from "@/types/script";
+
+export const mockScripts: SavedScript[] = [
+  { id: "s1", productName: "Cozy Flower Cat Bed", title: "The bed my cat chose instantly", hook: "I bought my cat five beds, and this is the only one she actually uses.", script: "The raised petals make her feel tucked in, the fabric is ridiculously soft, and yes, the cover is washable.", caption: "The tiny flower bed that passed the cat test.", hashtags: ["#CatTok", "#PetFinds", "#TikTokMadeMeBuyIt"], duration: 30, updatedAt: "2026-06-07" },
+  { id: "s2", productName: "Cordless Mini Handheld Vacuum", title: "The 10-second desk reset", hook: "Your keyboard is probably hiding more crumbs than you think.", script: "This tiny cordless vacuum gets into keyboard gaps, cup holders, and desk corners without dragging out the big vacuum.", caption: "Small gadget, very satisfying cleanup.", hashtags: ["#CleanTok", "#HomeGadgets", "#ViralFinds"], duration: 15, updatedAt: "2026-06-05" },
+  { id: "s3", productName: "Niacinamide Glow Serum", title: "My simple morning glow step", hook: "If your skincare pills under makeup, try this instead.", script: "Two drops, a lightweight texture, and a finish that layers beautifully under sunscreen and makeup.", caption: "A calm little glow-up for busy mornings.", hashtags: ["#BeautyTok", "#SkincareRoutine", "#GlowSkin"], duration: 30, updatedAt: "2026-06-02" },
+];

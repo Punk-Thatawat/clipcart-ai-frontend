@@ -7,6 +7,13 @@ export const defaultGenerationSettings: GenerationSettings = {
   tone: "Friendly",
   platform: "TikTok",
   includeCta: true,
+  includeStoryboard: false,
+  voiceId: "rachel",
+  voiceModel: "Eleven v3",
+  voiceSpeed: 50,
+  voiceTone: 50,
+  voicePacing: 65,
+  voiceStyle: 35,
 };
 
 export const generationSteps = [

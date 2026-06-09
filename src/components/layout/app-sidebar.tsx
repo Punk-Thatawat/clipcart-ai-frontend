@@ -15,6 +15,7 @@ import {
   MagnifyingGlass,
   Megaphone,
   Palette,
+  ShareNetwork,
   Sparkle,
   VideoCamera,
 } from "@phosphor-icons/react";
@@ -31,6 +32,7 @@ const navItems = [
   { href: "/templates", label: "Templates", icon: CirclesFour, route: "/templates" },
   { href: "/auto-reels", label: "Auto Reels", icon: MagicWand, badge: "New", route: "/auto-reels" },
   { href: "/analytics", label: "Analytics", icon: ChartBar, route: "/analytics" },
+  { href: "/connected-accounts", label: "Connected Accounts", icon: ShareNetwork, route: "/connected-accounts" },
   { href: "/affiliate-links", label: "Affiliate Links", icon: LinkSimple, route: "/affiliate-links" },
   { href: "/brand-kit", label: "Brand Kit", icon: Palette, route: "/brand-kit" },
   { href: "/saved", label: "Saved", icon: Heart, route: "/saved" },

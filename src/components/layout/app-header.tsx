@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Bell, CaretDown, ChartBar, CirclesFour, FileText, GearSix, Gift, Heart, House, LinkSimple, List, MagicWand, MagnifyingGlass, Megaphone, Palette, SignOut, UserPlus, X } from "@phosphor-icons/react";
+import { Bell, CaretDown, ChartBar, CirclesFour, FileText, GearSix, Gift, Heart, House, LinkSimple, List, MagicWand, MagnifyingGlass, Megaphone, Palette, ShareNetwork, SignOut, UserPlus, X } from "@phosphor-icons/react";
 import { AppLogo } from "@/components/brand/app-logo";
 import { useAuth } from "@/components/auth/auth-provider";
 
@@ -16,6 +16,7 @@ const titles: Record<string, [string, string]> = {
   "/templates": ["Video Templates", "Start faster with proven affiliate video structures."],
   "/auto-reels": ["Auto Reels", "Keep your affiliate content pipeline running automatically."],
   "/analytics": ["Analytics", "Understand what drives views, clicks, and affiliate revenue."],
+  "/connected-accounts": ["Connected Accounts", "Manage TikTok, Facebook, X, and YouTube from one ClipCart account."],
   "/affiliate-links": ["Affiliate Links", "Create, organize, and track links with campaign sub IDs."],
   "/brand-kit": ["Brand Kit", "Keep every generated campaign consistent with your creator brand."],
   "/saved": ["Saved Products", "Review the products you bookmarked for future campaigns."],
@@ -108,6 +109,7 @@ export function AppHeader() {
                 ["/templates", "Templates", CirclesFour],
                 ["/auto-reels", "Auto Reels", MagicWand],
                 ["/analytics", "Analytics", ChartBar],
+                ["/connected-accounts", "Connected Accounts", ShareNetwork],
                 ["/affiliate-links", "Affiliate Links", LinkSimple],
                 ["/brand-kit", "Brand Kit", Palette],
                 ["/saved", "Saved", Heart],

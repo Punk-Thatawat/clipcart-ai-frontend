@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DotsThreeVertical } from "@phosphor-icons/react/dist/ssr";
+import { DotsThree } from "@phosphor-icons/react/dist/ssr";
 import { Badge } from "@/components/ui/badge";
 
 const campaigns = [
@@ -85,7 +85,7 @@ export function RecentCampaigns() {
               <th className="w-[9%] pb-2.5 font-medium">Clicks</th>
               <th className="w-[13%] pb-2.5 font-medium">Est. Earnings</th>
               <th className="w-[9%] pb-2.5 font-medium">Status</th>
-              <th className="w-5" />
+              <th className="w-11" />
             </tr>
           </thead>
           <tbody>
@@ -125,8 +125,15 @@ export function RecentCampaigns() {
                     {campaign.status}
                   </Badge>
                 </td>
-                <td className="py-2.5">
-                  <DotsThreeVertical size={16} className="text-[#697083]" />
+                <td className="py-2.5 pl-2 text-right">
+                  <button
+                    type="button"
+                    aria-label={`Open actions for ${campaign.name}`}
+                    title="Campaign actions"
+                    className="inline-flex size-8 items-center justify-center rounded-lg border border-transparent text-[#7a8090] transition hover:border-[#eee5df] hover:bg-[#fff7f3] hover:text-[#ef4b2b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb6a5]"
+                  >
+                    <DotsThree size={20} weight="bold" />
+                  </button>
                 </td>
               </tr>
             ))}
